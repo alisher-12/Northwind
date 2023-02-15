@@ -1,0 +1,14 @@
+<div class="box">
+
+    <!-- Attribute Directives: -->
+    <span [ngStyle]="styling">Here are our desserts: </span>
+
+    <!-- Structural Directive: -->
+    <span *ngIf="isWeekend()">Only on weekend - Eclair </span>
+    <span *ngIf="!isWeekend()">On mid week - Apple Pie</span>
+   
+    <hr>
+
+    <span *ngFor="let d of desserts">{{d.name}} 💖 </span>
+    
+</div>
